@@ -6,11 +6,4 @@ on:
 jobs:
   build:
     name: test
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: wf call
-        uses: null-hyd-gha-demo/actions/test.yaml@main
+    uses: null-hyd-gha-demo/actions/.github/workflows/test.yaml@main
